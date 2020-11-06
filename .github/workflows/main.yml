@@ -53,9 +53,11 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          . ~/.bashrc
+          pwd
+          # . ~/.bashrc
+          export PATH=/root/.nvm/versions/node/v15.1.0/bin:$PATH
           cd /root/realworld-nuxtjs
           wget https://github.com/no-pear/realworld-nuxtjs/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
-          /root/.nvm/versions/node/v15.1.0/bin/npm install --production
-          /root/.nvm/versions/node/v15.1.0/bin/pm2 reload pm2.config.js
+          npm install --production
+          pm2 reload pm2.config.js
