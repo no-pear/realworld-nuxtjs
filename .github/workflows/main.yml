@@ -53,6 +53,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
+          export PATH=/root/.nvm/versions/node/v15.1.0/bin:$PATH
           cd /root/realworld-nuxtjs
           wget https://github.com/no-pear/realworld-nuxtjs/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
