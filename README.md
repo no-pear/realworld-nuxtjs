@@ -1,7 +1,0 @@
-# realworld-nuxtjs
-
-#### token
-
-2466be8657cfdc723c5ba6cfd7c45d528532e055
-
-16da9f5f0e3c14fb51940da559356ad6665349f6
