@@ -19,5 +19,13 @@
     "js-cookie": "^2.2.1",
     "markdown-it": "^12.0.2",
     "nuxt": "^2.14.7"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

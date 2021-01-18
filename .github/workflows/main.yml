@@ -53,7 +53,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          pwd
           # . ~/.bashrc
           export PATH=/root/.nvm/versions/node/v15.1.0/bin:$PATH
           cd /root/realworld-nuxtjs
